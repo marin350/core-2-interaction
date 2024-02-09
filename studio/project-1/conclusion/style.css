@@ -1,0 +1,28 @@
+body{
+    background-color: honeydew;
+    color: olive;
+    font-size: 110%;
+    font-family: "noto sans mono";
+}
+a{
+    color: honeydew;
+    background-color: olive;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: "noto sans mono";
+}
+a:hover{
+    color: olive;
+    border: 1px solid olive;
+    background-color: honeydew;
+}
+#title{
+    color: darkgreen;
+    position: fixed;
+    font-family: "noto sans mono";
+    font-style: italic;
+}
+#text{
+    font-family: "noto sans mono";
+}

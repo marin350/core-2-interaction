@@ -1,0 +1,52 @@
+body{
+    background-color: honeydew;
+    color: olive;
+    font-size: 110%;
+    font-family: "noto sans mono";
+}
+a{
+    color: honeydew;
+    background-color: olive;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: "noto sans mono";
+}
+a:hover{
+    color: olive;
+    border: 1px solid olive;
+    background-color: honeydew;
+}
+#title{
+    color: darkgreen;
+    position: fixed;
+    font-family: "noto sans mono";
+    font-style: italic;
+}
+#text{
+    font-family: "noto sans mono";
+}
+.animation-text{
+    display: inline-block;
+    font-size: 600%;
+    color: darkgreen;
+    left: 55%;
+    top: 20%;
+    position: absolute;
+}
+.ani-1{
+    animation: ani-1 1s infinite;
+}
+.ani-2{
+    animation: ani-2 1s infinite;
+}
+@keyframes ani-1{
+    0% {color: olive; font-style: italic;}
+    50% {color: orangered; font-style: normal;font-weight: 800;}
+    100% {color: olive; font-style: italic;}
+}
+@keyframes ani-2{
+    0% {color: orangered; font-weight: 800;}
+    50% {color: olive; font-weight: 400; font-style: italic;}
+    100% {color: orangered;font-weight: 800;}
+}

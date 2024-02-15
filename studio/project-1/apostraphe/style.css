@@ -26,3 +26,18 @@ a:hover{
 #text{
     font-family: "noto sans mono";
 }
+.ap{
+    font-family: "noto sans mono";
+    font-size: 400px;
+    position: absolute;
+    left: 68%;
+    top: 0%;
+    animation: ap 4s 1s infinite forwards;
+}
+@keyframes ap{
+    0% {left: 68%; top: 0%; rotate: 0deg; color: olive;}
+    25% {left: 68%; top: 10%; rotate: -90deg; color: orangered;}
+    50% {left: 68%; top: 20%; rotate: 90deg; color: olive;}
+    75% {left: 68%; top: 30%; rotate: -90deg; color: orangered;}
+    100% {left: 68%; top: 40%; rotate: 90deg; color: olive;}
+}

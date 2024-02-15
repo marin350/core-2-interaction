@@ -26,3 +26,15 @@ a:hover{
 #text{
     font-family: "noto sans mono";
 }
+.question-mark{
+    font-size: 400px;
+    color: orangered;
+    position: absolute;
+    left: 72%;
+    animation: questionmark 5s infinite;
+}
+@keyframes questionmark{
+    0% {color: orangered; filter:blur(0px)}
+    50% {color: olive; filter: blur(100px);}
+    100% {color: orangered;filter:blur(0px)}
+}

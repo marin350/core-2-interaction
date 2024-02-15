@@ -26,3 +26,23 @@ a:hover{
 #text{
     font-family: "noto sans mono";
 }
+#exc{
+    font-size: 250px;
+    font-family: "noto sans mono";
+    position: absolute;
+    left: 63%;
+    animation: exc 2s infinite;
+}
+@keyframes exc {
+    0% {left: 63%; top: 20%; color: olive;}
+    10% {left: 68%; top: 17%; color: orangered;}
+    20% {left: 58%; top: 21%; color: olive;}
+    30% {left: 60%; top: 8%; color: olive;}
+    40% {left: 57%; top: 50%;color: orangered;}
+    50% {left: 63%; top: 20%;color: olive;}
+    60% {left: 68%; top: 15%;color: orangered;}
+    70% {left: 67%; top: 65%;color: orangered;}
+    80% {left: 58%; top: 21%;color: olive;}
+    90% {left: 68%; top: 5%; color: olive;}
+    100% {left: 63%; top: 20%;color: orangered;}
+}

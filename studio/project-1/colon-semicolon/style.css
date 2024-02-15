@@ -26,3 +26,16 @@ a:hover{
 #text{
     font-family: "noto sans mono";
 }
+.colons{
+    font-size: 400px;
+    color: orangered;
+    position: absolute;
+    left: 62% ;
+    top: 15%;
+    animation: colons 6s 2s infinite;
+}
+@keyframes colons {
+    0% {rotate: 0deg; color: olive;}
+    50% {rotate: 360deg; color: orangered;}
+    100% {rotate: 0deg; color: olive;}
+}

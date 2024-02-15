@@ -26,3 +26,11 @@ a:hover{
 #text{
     font-family: "noto sans mono";
 }
+#comma{
+    animation: comma 6s 2s infinite forwards;
+}
+@keyframes comma {
+    0% {font-size: 110%; color: olive;}
+    50% {font-size: 300%; color: orangered;}
+    100% {font-size: 110%; color: olive;}
+}

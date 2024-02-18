@@ -28,7 +28,7 @@ a:hover{
     font-family: "noto sans mono";
 }
 @keyframes period1{
-    to {left: 43.5%;}
+    to {left: 43.7%;}
     from {left: 73%;}
 }
 @keyframes period2{
@@ -36,15 +36,15 @@ a:hover{
     from {left: 73%;}
 }
 @keyframes period3{
-    to {left: 32%;}
+    to {left: 32.5%;}
     from {left: 73%;}
 }
 @keyframes period4{
-    to {left: 11%;}
+    to {left: 11.5%;}
     from {left: 73%;}
 }
 #period1{
-    animation: period1 5s 2s infinite forwards ;
+    animation: period1 3s 2s 1 forwards ;
     font-size: 150px;
     position: absolute;
     top: 19.5%;
@@ -54,7 +54,7 @@ a:hover{
     line-height: 50px;
 }
 #period2{
-    animation: period2 5s 2s infinite forwards ;
+    animation: period2 3s 2s 1 forwards ;
     font-size: 150px;
     position: absolute;
     top: 29%;
@@ -64,7 +64,7 @@ a:hover{
     line-height: 50px;
 }
 #period3{
-    animation: period3 5s 2s infinite forwards ;
+    animation: period3 3s 2s 1 forwards ;
     font-size: 150px;
     position: absolute;
     top: 41%;
@@ -74,7 +74,7 @@ a:hover{
     line-height: 50px;
 }
 #period4{
-    animation: period4 5s 2s infinite forwards ;
+    animation: period4 3s 2s 1 forwards ;
     font-size: 150px;
     position: absolute;
     top: 51%;

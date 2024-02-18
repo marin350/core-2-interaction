@@ -31,6 +31,6 @@ a:hover{
 }
 @keyframes comma {
     0% {font-size: 110%; color: olive;}
-    50% {font-size: 300%; color: orangered;}
+    50% {font-size: 400%; color: orangered;}
     100% {font-size: 110%; color: olive;}
 }

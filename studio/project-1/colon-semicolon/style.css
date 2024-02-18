@@ -32,10 +32,49 @@ a:hover{
     position: absolute;
     left: 62% ;
     top: 15%;
-    animation: colons 6s 2s infinite;
+    animation: colons 1.5s 1s 1 forwards;
 }
-@keyframes colons {
-    0% {rotate: 0deg; color: olive;}
-    50% {rotate: 360deg; color: orangered;}
-    100% {rotate: 0deg; color: olive;}
+.colons2{
+    font-size: 400px;
+    color: orangered;
+    position: absolute;
+    left: 75% ;
+    top: 15%;
+    animation: colons2 1.5s 1.5s 1 forwards;
+}
+.period{
+    font-size: 400px;
+    color: orangered;
+    position: absolute;
+    left: 67% ;
+    top: 15%;
+    opacity: 0;
+    animation: period 3s 1.7s 1 forwards;
+}
+.comma{
+    font-size: 400px;
+    color: orangered;
+    position: absolute;
+    left: 73% ;
+    top: 15%;
+    opacity: 0;
+    animation: comma 3s 1.7s 1 forwards;
+}
+@keyframes colons{
+    0% {rotate: -15deg;}
+    50% {rotate: 360deg;}
+    100% {rotate: 360deg; left: -10%;}
+}
+@keyframes colons2{
+    0% {rotate: -15deg;}
+    50% {rotate: -360deg;}
+    100% {rotate: -360deg; left: 120%;}
+}
+@keyframes period{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes comma {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }

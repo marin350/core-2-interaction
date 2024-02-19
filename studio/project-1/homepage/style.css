@@ -50,3 +50,53 @@ a:hover{
     50% {color: olive; font-weight: 400; font-style: italic;}
     100% {color: orangered;font-weight: 800;}
 }
+
+@media screen and (min-width: 430px) {
+    a{
+        color: honeydew;
+        background-color: olive;
+        text-decoration: none;
+        padding: 5px;
+        border-radius: 5px;
+        font-family: "noto sans mono";
+        margin: -1%;
+    }
+    #title{
+        color: darkgreen;
+        position: fixed;
+        font-family: "noto sans mono";
+        font-style: italic;
+        margin-left: -10%;
+    }
+    #text{
+        font-family: "noto sans mono";
+        margin-left: -2%;
+        margin-right: 10%;
+        font-size: 80%;
+        width: 50%;
+    }
+    .animation-text{
+        display: inline-block;
+        font-size: 400%;
+        color: darkgreen;
+        left: 10%;
+        top: 50%;
+        position: absolute;
+    }
+    .ani-1{
+        animation: ani-1 1s infinite;
+    }
+    .ani-2{
+        animation: ani-2 1s infinite;
+    }
+    @keyframes ani-1{
+        0% {color: olive; font-style: italic;}
+        50% {color: orangered; font-style: normal;font-weight: 800;}
+        100% {color: olive; font-style: italic;}
+    }
+    @keyframes ani-2{
+        0% {color: orangered; font-weight: 800;}
+        50% {color: olive; font-weight: 400; font-style: italic;}
+        100% {color: orangered;font-weight: 800;}
+    }
+  }

@@ -4,6 +4,12 @@ body{
     font-size: 110%;
     font-family: "noto sans mono";
 }
+.nav{
+    display: inline-block;
+    position: relative;
+    top: 500px;
+    margin-left: 2%;
+}
 a{
     color: honeydew;
     background-color: olive;
@@ -12,34 +18,35 @@ a{
     border-radius: 5px;
     font-family: "noto sans mono";
     display: inline;
-    position: relative;
-    top: 400px;
-    left: -5%;
 }
 #free{
     display: block;
-    position: relative;
-    top: 400px;
-    left: -5%;
+    margin-bottom: 1%;
+    margin-top: 1%;
 }
 a:hover{
     color: olive;
     border: 1px solid olive;
     background-color: honeydew;
 }
-h1{
-    color: darkgreen;
+.title{
+    color: honeydew;
     position: fixed;
     font-family: "noto sans mono";
     font-style: italic;
-    margin-left: 2%;
+    font-size: 150%;
+    margin: 2%;
+    background-color: orangered;
+    padding: 12px;
+    border-radius: 100%;
+    z-index: 1;
 }
 .text{
     font-family: "noto sans mono";
     text-align: left;
     width: 50%;
     position: absolute;
-    top: 10%;
+    top: 13%;
     margin-left: 2%;
 }
 #exc{
@@ -49,7 +56,7 @@ h1{
     left: 63%;
     animation: exc 2s infinite;
 }
-/* @keyframes exc {
+@keyframes exc {
     0% {left: 63%; top: 20%; color: olive;}
     10% {left: 68%; top: 17%; color: orangered;}
     20% {left: 58%; top: 21%; color: olive;}
@@ -61,52 +68,47 @@ h1{
     80% {left: 58%; top: 21%;color: olive;}
     90% {left: 68%; top: 5%; color: olive;}
     100% {left: 63%; top: 20%;color: orangered;}
-} */
-@media screen and (max-width: 500px) {
-    h1{
+}
+@media screen and (max-width: 400px) {
+    .title{
         font-size: 120%;
-        width: 50%;
     }
     .text{
         width: 90%;
-        position: absolute;
-        top: 5%;
+        position: relative;
+        top: 80px;
         margin-left: 2%;
     }
-    a{
-        position: relative;
-        top: 620px;
-        left: -20%;
-        font-size: 80%;
+    .nav{
+        font-size: 60%;
+        top: 350px;
+        margin-left: 2%;
+        padding-bottom: 40px;
     }
-    #free{
-        position: relative;
-        top: 620px;
-        left: -20%;
-    }
-    .animation-text{
-        font-size: 450%;
-        left: 8%;
-        top: 55%;
+    .question-mark{
         position: absolute;
+        top: 200px;
+        left: 80%;
+        font-size:700%;
     }
-    .exc{
+    #exc{
+        font-size: 100px;
+        font-family: "noto sans mono";
         position: absolute;
-        left: 20%;
-        top: 300%;
+        left: 40%;
         animation: exc 2s infinite;
     }
     @keyframes exc {
         0% {left: 10%; top: 110%; color: olive;}
-        10% {left: 5%; top: 100%; color: orangered;}
-        20% {left: 1%; top: 120%; color: olive;}
-        30% {left: 6%; top: 105%; color: olive;}
-        40% {left: 8%; top: 100%;color: orangered;}
-        50% {left: 10%; top: 115%;color: olive;}
-        60% {left: 3%; top: 105%;color: orangered;}
-        70% {left: 4%; top: 100%;color: orangered;}
-        80% {left: 8%; top: 110%;color: olive;}
-        90% {left: 1%; top: 112%; color: olive;}
-        100% {left: 10%; top: 110%;color: orangered;}
+        10% {left: 5%; top: 125%; color: orangered;}
+        20% {left: 50%; top: 130%; color: olive;}
+        30% {left: 20%; top: 113%; color: olive;}
+        40% {left: 35%; top: 128%;color: orangered;}
+        50% {left: 12%; top: 116%;color: olive;}
+        60% {left: 55%; top: 139%;color: orangered;}
+        70% {left: 25%; top: 120%;color: orangered;}
+        80% {left: 45%; top: 110%;color: olive;}
+        90% {left: 15%; top: 125%; color: olive;}
+        100% {left: 10%; top: 114%;color: orangered;}
     }
 }

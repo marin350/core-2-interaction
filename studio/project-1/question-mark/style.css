@@ -4,6 +4,12 @@ body{
     font-size: 110%;
     font-family: "noto sans mono";
 }
+.nav{
+    display: inline-block;
+    position: relative;
+    top: 500px;
+    margin-left: 2%;
+}
 a{
     color: honeydew;
     background-color: olive;
@@ -12,39 +18,35 @@ a{
     border-radius: 5px;
     font-family: "noto sans mono";
     display: inline;
-    position: relative;
-    top: 500px;
-    left: -5%;
 }
 #free{
     display: block;
-    position: relative;
-    top: 500px;
-    left: -7%;
+    margin-bottom: 1%;
+    margin-top: 1%;
 }
 a:hover{
     color: olive;
     border: 1px solid olive;
     background-color: honeydew;
 }
-a:hover{
-    color: olive;
-    border: 1px solid olive;
-    background-color: honeydew;
-}
-h1{
-    color: darkgreen;
+.title{
+    color: honeydew;
     position: fixed;
     font-family: "noto sans mono";
     font-style: italic;
-    margin-left: 2%;
+    font-size: 150%;
+    margin: 2%;
+    background-color: orangered;
+    padding: 12px;
+    border-radius: 100%;
+    z-index: 1;
 }
 .text{
     font-family: "noto sans mono";
     text-align: left;
     width: 50%;
     position: absolute;
-    top: 10%;
+    top: 13%;
     margin-left: 2%;
 }
 .question-mark{
@@ -59,37 +61,27 @@ h1{
     50% {color: olive; filter: blur(100px);}
     100% {color: orangered;filter:blur(0px)}
 }
-@media screen and (max-width: 500px) {
-    h1{
+@media screen and (max-width: 400px) {
+    .title{
         font-size: 120%;
-        width: 50%;
     }
     .text{
-        width: 90%;
-        position: absolute;
-        top: 5%;
+        width: 80%;
+        position: relative;
+        top: 80px;
         margin-left: 2%;
     }
-    a{
-        position: relative;
-        top: 650px;
-        left: -20%;
-        font-size: 80%;
-    }
-    #free{
-        position: relative;
-        top: 650px;
-        left: -25%;
-    }
-    .animation-text{
-        font-size: 450%;
-        left: 8%;
-        top: 55%;
-        position: absolute;
+    .nav{
+        font-size: 60%;
+        top: 100px;
+        margin-left: 2%;
+        padding-bottom: 40px;
     }
     .question-mark{
         position: absolute;
-        left: 20%;
-        top: 110%;
+        top: 200px;
+        left: 80%;
+        font-size:700%;
+
     }
 }

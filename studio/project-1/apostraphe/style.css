@@ -4,6 +4,13 @@ body{
     font-size: 110%;
     font-family: "noto sans mono";
 }
+.nav{
+    display: inline-block;
+    position: relative;
+    top: 700px;
+    margin-left: 2%;
+    padding-bottom: 80px;
+}
 a{
     color: honeydew;
     background-color: olive;
@@ -12,34 +19,35 @@ a{
     border-radius: 5px;
     font-family: "noto sans mono";
     display: inline;
-    position: relative;
-    top: 640px;
-    left: -5%;
 }
 #free{
     display: block;
-    position: relative;
-    top: 640px;
-    left: -5%;
+    margin-bottom: 1%;
+    margin-top: 1%;
 }
 a:hover{
     color: olive;
     border: 1px solid olive;
     background-color: honeydew;
 }
-h1{
-    color: darkgreen;
+.title{
+    color: honeydew;
     position: fixed;
     font-family: "noto sans mono";
     font-style: italic;
-    margin-left: 2%;
+    font-size: 150%;
+    margin: 2%;
+    background-color: orangered;
+    padding: 10px;
+    border-radius: 100%;
+    z-index: 1;
 }
 .text{
     font-family: "noto sans mono";
     text-align: left;
     width: 40%;
     position: absolute;
-    top: 10%;
+    top: 12%;
     margin-left: 2%;
 }
 .ap{
@@ -57,27 +65,21 @@ h1{
     75% {left: 68%; top: 30%; rotate: -90deg; color: orangered;}
     100% {left: 68%; top: 40%; rotate: 90deg; color: olive;}
 }
-@media screen and (max-width: 500px) {
-    h1{
-        font-size: 170%;
-        width: 50%;
+@media screen and (max-width: 400px) {
+    .title{
+        font-size: 120%;
     }
     .text{
         width: 90%;
-        position: absolute;
-        top: 10%;
+        position: relative;
+        top: 80px;
         margin-left: 2%;
     }
-    a{
-        position: relative;
-        top: 830px;
-        left: -20%;
-        font-size: 80%;
-    }
-    #free{
-        position: relative;
-        top: 830px;
-        left: -20%;
+    .nav{
+        font-size: 60%;
+        top: 400px;
+        margin-left: 2%;
+        padding-bottom: 40px;
     }
     .animation-text{
         font-size: 450%;
@@ -90,14 +92,14 @@ h1{
         font-size: 350px;
         position: absolute;
         left: 15%;
-        top: 120%;
+        top: 130%;
         animation: ap 4s 1s infinite forwards;
     }
     @keyframes ap{
-        0% {left: 15%; top: 120%; rotate: 0deg; color: olive;}
-        25% {left: 15%; top: 125%; rotate: -90deg; color: orangered;}
-        50% {left: 15%; top: 130%; rotate: 90deg; color: olive;}
-        75% {left: 15%; top: 135%; rotate: -90deg; color: orangered;}
-        100% {left: 15%; top: 140%; rotate: 90deg; color: olive;}
+        0% {left: 15%; top: 130%; rotate: 0deg; color: olive;}
+        25% {left: 15%; top: 135%; rotate: -90deg; color: orangered;}
+        50% {left: 15%; top: 140%; rotate: 90deg; color: olive;}
+        75% {left: 15%; top: 145%; rotate: -90deg; color: orangered;}
+        100% {left: 15%; top: 150%; rotate: 90deg; color: olive;}
     }
 }

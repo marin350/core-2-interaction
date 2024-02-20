@@ -11,20 +11,41 @@ a{
     padding: 5px;
     border-radius: 5px;
     font-family: "noto sans mono";
+    display: inline;
+    position: relative;
+    top: 500px;
+    left: -5%;
+}
+#free{
+    display: block;
+    position: relative;
+    top: 500px;
+    left: -7%;
 }
 a:hover{
     color: olive;
     border: 1px solid olive;
     background-color: honeydew;
 }
-#title{
+a:hover{
+    color: olive;
+    border: 1px solid olive;
+    background-color: honeydew;
+}
+h1{
     color: darkgreen;
     position: fixed;
     font-family: "noto sans mono";
     font-style: italic;
+    margin-left: 2%;
 }
-#text{
+.text{
     font-family: "noto sans mono";
+    text-align: left;
+    width: 50%;
+    position: absolute;
+    top: 10%;
+    margin-left: 2%;
 }
 .question-mark{
     font-size: 400px;
@@ -37,4 +58,38 @@ a:hover{
     0% {color: orangered; filter:blur(0px)}
     50% {color: olive; filter: blur(100px);}
     100% {color: orangered;filter:blur(0px)}
+}
+@media screen and (max-width: 500px) {
+    h1{
+        font-size: 120%;
+        width: 50%;
+    }
+    .text{
+        width: 90%;
+        position: absolute;
+        top: 5%;
+        margin-left: 2%;
+    }
+    a{
+        position: relative;
+        top: 650px;
+        left: -20%;
+        font-size: 80%;
+    }
+    #free{
+        position: relative;
+        top: 650px;
+        left: -25%;
+    }
+    .animation-text{
+        font-size: 450%;
+        left: 8%;
+        top: 55%;
+        position: absolute;
+    }
+    .question-mark{
+        position: absolute;
+        left: 20%;
+        top: 110%;
+    }
 }

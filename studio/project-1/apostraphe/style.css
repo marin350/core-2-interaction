@@ -11,20 +11,36 @@ a{
     padding: 5px;
     border-radius: 5px;
     font-family: "noto sans mono";
+    display: inline;
+    position: relative;
+    top: 640px;
+    left: -5%;
+}
+#free{
+    display: block;
+    position: relative;
+    top: 640px;
+    left: -5%;
 }
 a:hover{
     color: olive;
     border: 1px solid olive;
     background-color: honeydew;
 }
-#title{
+h1{
     color: darkgreen;
     position: fixed;
     font-family: "noto sans mono";
     font-style: italic;
+    margin-left: 2%;
 }
-#text{
+.text{
     font-family: "noto sans mono";
+    text-align: left;
+    width: 40%;
+    position: absolute;
+    top: 10%;
+    margin-left: 2%;
 }
 .ap{
     font-family: "noto sans mono";
@@ -40,4 +56,48 @@ a:hover{
     50% {left: 68%; top: 20%; rotate: 90deg; color: olive;}
     75% {left: 68%; top: 30%; rotate: -90deg; color: orangered;}
     100% {left: 68%; top: 40%; rotate: 90deg; color: olive;}
+}
+@media screen and (max-width: 500px) {
+    h1{
+        font-size: 170%;
+        width: 50%;
+    }
+    .text{
+        width: 90%;
+        position: absolute;
+        top: 10%;
+        margin-left: 2%;
+    }
+    a{
+        position: relative;
+        top: 830px;
+        left: -20%;
+        font-size: 80%;
+    }
+    #free{
+        position: relative;
+        top: 830px;
+        left: -20%;
+    }
+    .animation-text{
+        font-size: 450%;
+        left: 8%;
+        top: 70%;
+        position: absolute;
+    }
+    .ap{
+        font-family: "noto sans mono";
+        font-size: 350px;
+        position: absolute;
+        left: 15%;
+        top: 120%;
+        animation: ap 4s 1s infinite forwards;
+    }
+    @keyframes ap{
+        0% {left: 15%; top: 120%; rotate: 0deg; color: olive;}
+        25% {left: 15%; top: 125%; rotate: -90deg; color: orangered;}
+        50% {left: 15%; top: 130%; rotate: 90deg; color: olive;}
+        75% {left: 15%; top: 135%; rotate: -90deg; color: orangered;}
+        100% {left: 15%; top: 140%; rotate: 90deg; color: olive;}
+    }
 }

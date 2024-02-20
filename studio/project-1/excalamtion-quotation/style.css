@@ -11,20 +11,36 @@ a{
     padding: 5px;
     border-radius: 5px;
     font-family: "noto sans mono";
+    display: inline;
+    position: relative;
+    top: 400px;
+    left: -5%;
+}
+#free{
+    display: block;
+    position: relative;
+    top: 400px;
+    left: -5%;
 }
 a:hover{
     color: olive;
     border: 1px solid olive;
     background-color: honeydew;
 }
-#title{
+h1{
     color: darkgreen;
     position: fixed;
     font-family: "noto sans mono";
     font-style: italic;
+    margin-left: 2%;
 }
-#text{
+.text{
     font-family: "noto sans mono";
+    text-align: left;
+    width: 50%;
+    position: absolute;
+    top: 10%;
+    margin-left: 2%;
 }
 #exc{
     font-size: 250px;
@@ -33,7 +49,7 @@ a:hover{
     left: 63%;
     animation: exc 2s infinite;
 }
-@keyframes exc {
+/* @keyframes exc {
     0% {left: 63%; top: 20%; color: olive;}
     10% {left: 68%; top: 17%; color: orangered;}
     20% {left: 58%; top: 21%; color: olive;}
@@ -45,4 +61,52 @@ a:hover{
     80% {left: 58%; top: 21%;color: olive;}
     90% {left: 68%; top: 5%; color: olive;}
     100% {left: 63%; top: 20%;color: orangered;}
+} */
+@media screen and (max-width: 500px) {
+    h1{
+        font-size: 120%;
+        width: 50%;
+    }
+    .text{
+        width: 90%;
+        position: absolute;
+        top: 5%;
+        margin-left: 2%;
+    }
+    a{
+        position: relative;
+        top: 620px;
+        left: -20%;
+        font-size: 80%;
+    }
+    #free{
+        position: relative;
+        top: 620px;
+        left: -20%;
+    }
+    .animation-text{
+        font-size: 450%;
+        left: 8%;
+        top: 55%;
+        position: absolute;
+    }
+    .exc{
+        position: absolute;
+        left: 20%;
+        top: 300%;
+        animation: exc 2s infinite;
+    }
+    @keyframes exc {
+        0% {left: 10%; top: 110%; color: olive;}
+        10% {left: 5%; top: 100%; color: orangered;}
+        20% {left: 1%; top: 120%; color: olive;}
+        30% {left: 6%; top: 105%; color: olive;}
+        40% {left: 8%; top: 100%;color: orangered;}
+        50% {left: 10%; top: 115%;color: olive;}
+        60% {left: 3%; top: 105%;color: orangered;}
+        70% {left: 4%; top: 100%;color: orangered;}
+        80% {left: 8%; top: 110%;color: olive;}
+        90% {left: 1%; top: 112%; color: olive;}
+        100% {left: 10%; top: 110%;color: orangered;}
+    }
 }

@@ -11,43 +11,58 @@ a{
     padding: 5px;
     border-radius: 5px;
     font-family: "noto sans mono";
+    display: inline;
+    position: relative;
+    top: 800px;
+    left: -5%;
+}
+#free{
+    display: block;
+    position: relative;
+    top: 800px;
+    left: -5%;
 }
 a:hover{
     color: olive;
     border: 1px solid olive;
     background-color: honeydew;
 }
-#title{
+h1{
     color: darkgreen;
     position: fixed;
     font-family: "noto sans mono";
     font-style: italic;
-    font-size: 150%
+    margin-left: 2%;
 }
-#text{
+.text{
     font-family: "noto sans mono";
+    text-align: left;
+    width: 50%;
+    position: absolute;
+    top: 10%;
+    margin-left: 2%;
 }
 @keyframes period1{
-    to {left: 43.7%;}
+    to {left: 32%;}
     from {left: 73%;}
 }
 @keyframes period2{
-    to {left: 52%;}
+    to {left: 27.5%;}
     from {left: 73%;}
 }
 @keyframes period3{
-    to {left: 32.5%;}
+    to {left: 47.5%;}
     from {left: 73%;}
 }
 @keyframes period4{
-    to {left: 11.5%;}
+    to {left: 20%;}
     from {left: 73%;}
 }
 #period1{
     animation: period1 3s 2s 1 forwards ;
     font-size: 150px;
     position: absolute;
-    top: 19.5%;
+    top: 19.8%;
     left: 73%;
     font-family: "noto sans mono";
     color: orangered;
@@ -67,7 +82,7 @@ a:hover{
     animation: period3 3s 2s 1 forwards ;
     font-size: 150px;
     position: absolute;
-    top: 41%;
+    top: 39%;
     left: 73%;
     font-family: "noto sans mono";
     color: orangered;
@@ -82,4 +97,27 @@ a:hover{
     font-family: "noto sans mono";
     color: orangered;
     line-height: 50px;
+}
+@media screen and (max-width: 500px) {
+    h1{
+        font-size: 120%;
+        width: 50%;
+    }
+    .text{
+        width: 70%;
+        position: absolute;
+        top: 10%;
+        margin-left: 2%;
+    }
+    a{
+        position: relative;
+        top: 1600px;
+        left: -20%;
+        font-size: 80%;
+    }
+    #free{
+        position: relative;
+        top: 1600px;
+        left: -20%;
+    }
 }

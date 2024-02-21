@@ -85,34 +85,35 @@ a:hover{
     50% {color: olive; font-weight: 400; font-style: italic;}
     100% {color: orangered;font-weight: 800;}
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
     .title{
-        font-size: 100%;
-        top: 10%;
+        font-size: 140%;
+        top: 10px;
         left: 18%;
         position: relative;
     }
     #title1{
-        font-size: 150%;
+        font-size: 180%;
         position: relative;
-        left: 10%;
+        left: 15%;
+        top: 10px;
     }
     .text{
         font-size: 80%;
         width: 65%;
-        top: 18%;
+        top: 20%;
         left: 10%;
         width: 80%;
     }
     .nav{
-        font-size: 80%;
-        top: 350px;
-        margin-left: 2%;
+        font-size: 90%;
+        top: 400px;
+        margin-left: 10%;
         padding-bottom: 5px;
     }
     .animation-text{
-        font-size: 300%;
-        left: 15%;
-        top: 45%;
+        font-size: 350%;
+        left: 20%;
+        top: 40%;
     }
 }

@@ -106,7 +106,7 @@ a:hover{
     color: orangered;
     line-height: 50px;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
     .title{
         font-size: 120%;
     }
@@ -117,37 +117,37 @@ a:hover{
         margin-left: 2%;
     }
     .nav{
-        font-size: 60%;
+        font-size: 90%;
         top: 100px;
         margin-left: 2%;
         padding-bottom: 40px;
     }
     #period1{
-        top: 8%;
+        top: 4.5%;
     }
     #period2{
-        top: 35%;
+        top: 32.8%;
     }
     #period3{
-        top: 44.5%;
+        top: 55%;
     }
     #period4{
-        top: 70.5%;
+        top: 80%;
     }
     @keyframes period1{
-        to {left: 0%;}
+        to {left: 58.7%;}
         from {left: 73%;}
     }
     @keyframes period2{
-        to {left: 48%;}
+        to {left: 64%;}
         from {left: 73%;}
     }
     @keyframes period3{
-        to {left: 3%;}
+        to {left: 44%;}
         from {left: 73%;}
     }
     @keyframes period4{
-        to {left: 5%;}
+        to {left: 33.7%;}
         from {left: 73%;}
     }
 }

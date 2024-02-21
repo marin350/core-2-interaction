@@ -69,7 +69,7 @@ a:hover{
     90% {left: 68%; top: 5%; color: olive;}
     100% {left: 63%; top: 20%;color: orangered;}
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
     .title{
         font-size: 120%;
     }
@@ -80,35 +80,29 @@ a:hover{
         margin-left: 2%;
     }
     .nav{
-        font-size: 60%;
+        font-size: 90%;
         top: 350px;
         margin-left: 2%;
         padding-bottom: 40px;
-    }
-    .question-mark{
-        position: absolute;
-        top: 200px;
-        left: 80%;
-        font-size:700%;
     }
     #exc{
         font-size: 100px;
         font-family: "noto sans mono";
         position: absolute;
-        left: 40%;
+        left: 25%;
         animation: exc 2s infinite;
     }
     @keyframes exc {
-        0% {left: 10%; top: 110%; color: olive;}
-        10% {left: 5%; top: 125%; color: orangered;}
-        20% {left: 50%; top: 130%; color: olive;}
+        0% {left: 25%; top: 85%; color: olive;}
+        10% {left: 15%; top: 90%; color: orangered;}
+        20% {left: 40%; top: 100%; color: olive;}
         30% {left: 20%; top: 113%; color: olive;}
-        40% {left: 35%; top: 128%;color: orangered;}
-        50% {left: 12%; top: 116%;color: olive;}
-        60% {left: 55%; top: 139%;color: orangered;}
-        70% {left: 25%; top: 120%;color: orangered;}
-        80% {left: 45%; top: 110%;color: olive;}
-        90% {left: 15%; top: 125%; color: olive;}
-        100% {left: 10%; top: 114%;color: orangered;}
+        40% {left: 45%; top: 89%;color: orangered;}
+        50% {left: 12%; top: 100%;color: olive;}
+        60% {left: 35%; top: 91%;color: orangered;}
+        70% {left: 25%; top: 80%;color: orangered;}
+        80% {left: 10%; top: 105%;color: olive;}
+        90% {left: 40%; top: 95%; color: olive;}
+        100% {left: 20%; top: 83%;color: orangered;}
     }
 }

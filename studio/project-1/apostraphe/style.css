@@ -65,7 +65,7 @@ a:hover{
     75% {left: 68%; top: 30%; rotate: -90deg; color: orangered;}
     100% {left: 68%; top: 40%; rotate: 90deg; color: olive;}
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
     .title{
         font-size: 120%;
     }
@@ -76,30 +76,25 @@ a:hover{
         margin-left: 2%;
     }
     .nav{
-        font-size: 60%;
+        position: relative;
+        font-size: 80%;
         top: 400px;
         margin-left: 2%;
         padding-bottom: 40px;
-    }
-    .animation-text{
-        font-size: 450%;
-        left: 8%;
-        top: 70%;
-        position: absolute;
     }
     .ap{
         font-family: "noto sans mono";
         font-size: 350px;
         position: absolute;
-        left: 15%;
-        top: 130%;
+        left: 20%;
+        top: 100%;
         animation: ap 4s 1s infinite forwards;
     }
     @keyframes ap{
-        0% {left: 15%; top: 130%; rotate: 0deg; color: olive;}
-        25% {left: 15%; top: 135%; rotate: -90deg; color: orangered;}
-        50% {left: 15%; top: 140%; rotate: 90deg; color: olive;}
-        75% {left: 15%; top: 145%; rotate: -90deg; color: orangered;}
-        100% {left: 15%; top: 150%; rotate: 90deg; color: olive;}
+        0% {left: 20%; top: 100%; rotate: 0deg; color: olive;}
+        25% {left: 20%; top: 105%; rotate: -90deg; color: orangered;}
+        50% {left: 20%; top: 110%; rotate: 90deg; color: olive;}
+        75% {left: 20%; top: 115%; rotate: -90deg; color: orangered;}
+        100% {left: 20%; top: 120%; rotate: 90deg; color: olive;}
     }
 }

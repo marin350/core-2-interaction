@@ -1,0 +1,14 @@
+
+    Notes:
+
+    Display: Grid
+    for display: grid I made a small grid with no rows but onyl columns to use for my header, with the main title in column 1 and the subtitle in column 6
+
+    Display: Flex
+    for display: flex, I created a class for my images and applied flex to that, using flex-wrap and space-between to space them out evenly and create two rows of four images each. 
+
+    Positon: fixed
+    for my fixed positoning, I created a header for the class and positoned it in the center to scroll with the page.
+
+    Position: relative
+    for relative positoning, I applied it to the text within my display: flex class to reduce the space between my images and captions.

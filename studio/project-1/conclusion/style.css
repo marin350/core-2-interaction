@@ -16,8 +16,8 @@ a{
     color: honeydew;
     background-color: olive;
     text-decoration: none;
-    padding: 5px;
-    border-radius: 5px;
+    padding: var(--space-sm);
+    border-radius: var(--space-sm);
     font-family: "noto sans mono";
     display: inline;
 }

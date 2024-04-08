@@ -94,7 +94,8 @@ td, th {
   align-items: center;
   justify-content: center;
   position: relative;
-  width: auto;
+  width: 250px;
+  height: 250px;
 }
 .title-png{
   max-width: 70%;
@@ -122,8 +123,9 @@ img{
 .one{
     grid-column: 2;
     grid-row: 2;
-    width: 160%;
-    left: -25%;
+    left: -15%;
+    top: 5%;
+    width: 150%;
 }
 .two{
     grid-column: 2;
@@ -220,10 +222,10 @@ img{
   grid-column: 2;
   grid-row: 2;
   position: relative;
-  left: 15%;
+  left: 10%;
   top: 0%;
-  width: 200px;
-  height: 200px;
+  width: auto;
+  height: auto;
   border-radius: 100%;
 }
 
@@ -361,8 +363,8 @@ img{
   .watches{
     position: relative;
     margin-left: 0;
-    left: -10%;
-    top: -170px;
+    left: -15%;
+    top: -190px;
   }
   .title{
   font-size: 15px;
@@ -375,7 +377,7 @@ img{
   }
   .left{
     left: 0;
-    height: auto;
+    height: 850px;
     width: 100%;
     overflow-y: hidden;
     scrollbar-color: var(--blue) var(--orange);
@@ -390,6 +392,7 @@ img{
     overflow-y: hidden;
     scrollbar-color: var(--blue) var(--orange);
     bottom: 0;
+    height: 600px;
   }
   .grid2{
     position: relative;
@@ -404,9 +407,9 @@ img{
   .one{
     grid-column: 2;
     grid-row: 2;
-    width: 160%;
-    left: -25%;
-    z-index: 500;
+    position: relative;
+    left: -20%;
+    z-index: 2000;
   }
   .two{
     grid-column: 2;
@@ -470,6 +473,9 @@ img{
     top: -170px;
     margin-left: 5%;
   }
+  .wrap{
+    left: 0;
+  }
 }
 
 
@@ -517,7 +523,7 @@ img{
   }
   .right{
     padding-top: 20px;
-    height: 900px;
+    height: 500px;
     z-index: 1000;
     right: 0;
     width: 100%;
@@ -535,15 +541,15 @@ img{
     max-width: 10%;
     width: auto;
     z-index: 500;
-    padding: 10px;
+    padding: 1px;
     margin: 5%;
   }
   .one{
     grid-column: 2;
     grid-row: 2;
-    width: 160%;
-    left: -25%;
-    top: -30%;
+    position: relative;
+    top: -25%;
+    left: -20%;
     z-index: 500;
   }
   .two{

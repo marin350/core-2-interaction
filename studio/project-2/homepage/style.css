@@ -85,18 +85,19 @@ td, th {
   margin-left: 5%;
   position: relative;
   top: -150px;
+  left: 10%;
   display: grid;
   grid-template-rows: 250px 250px 250px;
   grid-template-columns: 250px 250px 250px;
 }
-.box {
+/* .box {
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   width: 250px;
   height: 250px;
-}
+} */
 .title-png{
   max-width: 70%;
   position: relative;
@@ -123,68 +124,71 @@ img{
 .one{
     grid-column: 2;
     grid-row: 2;
-    left: -15%;
-    top: 5%;
-    width: 150%;
+    position: relative;
+    max-width: 30%; 
+    top: 10%;
+    z-index: 700;     
 }
 .two{
+  position: relative;
     grid-column: 2;
     grid-row: 1;
-    top: 20%;
-    width: 120%;
-    left: -5%;
+    max-width: 23%;
+    top: 15%;
 }
 .three{
+  position: relative;
     grid-column: 3;
     grid-row: 1;
     rotate: 45deg;
     top: 30%;
-    left: -20%;
+    left: -25%;
 }
 .four{
+  position: relative;
     grid-column: 1;
     grid-row: 2;
     rotate: 90deg;
+    top: -20%;
 }
 .five{
+  position: relative;
     grid-column: 1;
     grid-row: 1;
     rotate: -45deg;
-    top: 30%;
-    left: 30%;
+    top: 20%;
+    left: 25%;
 }
 .six{
+  position: relative;
     grid-column: 3;
     grid-row: 2;
     rotate: 90deg;
-    width: 120%;
-    height: 0;
-    left: -10%;
-    top: 52%;
+    max-width: 20%;
+    left: 0;
 }
 .seven{
+  position: relative;
     grid-column: 1;
     grid-row: 3;
     rotate: 45deg;
-    top: 18%;
-    left: 20%;
-    width: 130%;
-
-    height: 0;
+    top: -50%;
+    left: 40%
 }
 .eight{
+  position: relative;
     grid-column: 2;
     grid-row: 3;
     width: 70%;
-    left: 20%;
-    top: 0%;
+    top: -40% ;
 }
 .nine{
+  position: relative;
     grid-column: 3;
     grid-row: 3;
     rotate: -45deg;
-    top: -30%;
-    left: -20%;
+    top: -60%;
+    left: -30%;
 }
 .grid2{
   display: grid;
@@ -222,8 +226,8 @@ img{
   grid-column: 2;
   grid-row: 2;
   position: relative;
-  left: 10%;
-  top: 0%;
+  left: -30%;
+  top: -20%;
   width: auto;
   height: auto;
   border-radius: 100%;
@@ -242,7 +246,7 @@ img{
   background: var(--orange);
   transform-origin: bottom center;
   transform: rotate(0deg);
-  z-index: 1;
+  z-index: 600;
   border-radius: 4px;
 }
 
@@ -286,6 +290,10 @@ img{
   grid-row: 2;
   position: relative;
   top: -20px;
+}
+.mySlides:hover{
+  filter: drop-shadow(0px 0px 0px var(--orange));
+  cursor: default;
 }
 .prev, .next {
   grid-row: 2;
@@ -363,8 +371,9 @@ img{
   .watches{
     position: relative;
     margin-left: 0;
-    left: -15%;
-    top: -190px;
+    left: 0%;
+    top: -20%;
+    z-index: 500;
   }
   .title{
   font-size: 15px;
@@ -405,67 +414,72 @@ img{
     margin: 1%;
   }
   .one{
-    grid-column: 2;
-    grid-row: 2;
     position: relative;
-    left: -20%;
-    z-index: 2000;
+    left: -10%;
+    top: 20%;
+    max-width: 25%;
+    z-index: 700;
   }
   .two{
     grid-column: 2;
     grid-row: 1;
-    top: 40%;
-    width: 120%;
+    top: 30%;
+    max-width: 20%;
     left: -5%;
   } 
   .three{
     grid-column: 3;
     grid-row: 1;
     rotate: 45deg;
-    top: 55%;
-    left: -40%;
+    max-width: 15%;
+    top: 50%;
+    left: -50%;
   }
   .four{
     grid-column: 1;
     grid-row: 2;
+    max-width: 15%;
     rotate: 90deg;
-    left: 40%;
+    left: 35%;
+    top: -10%;
   }
   .five{
     grid-column: 1;
     grid-row: 1;
     rotate: -45deg;
-    top: 50%;
-    left: 50%;
+    max-width: 15%;
+    top: 35%;
+    left: 45%;
   }
   .six{
     grid-column: 3;
     grid-row: 2;
     rotate: 90deg;
-    width: 120%;
-    left: -40%;
-    top: 52%;
+    max-width: 20%;
+    left: -45%;
+    top: 5%;
   }
   .seven{
     grid-column: 1;
     grid-row: 3;
     rotate: 45deg;
-    top: 10%;
-    left: 40%;
-    width: 130%;
+    top: -60%;
+    left: 50%;
+    max-width: 20%;
   }
   .eight{
     grid-column: 2;
     grid-row: 3;
-    width: 70%;
-    left: 20%;
-    top: -20%;
+    max-width: 14%;
+    left: -5%;
+    top: -40%;
   }
   .nine{
     grid-column: 3;
     grid-row: 3;
     rotate: -45deg;
-    top: -50%;
+    max-width: 20%;
+    top: -60%;
     left: -40%;
   }
   .info{
@@ -474,7 +488,8 @@ img{
     margin-left: 5%;
   }
   .wrap{
-    left: 0;
+    left: -45%;
+    z-index: 600;
   }
 }
 
@@ -501,8 +516,9 @@ img{
   .watches{
     position: relative;
     margin-left: 0;
-    left: -48%;
-    top: -170px;
+    left: -30%;
+    top: -20%;
+    margin-bottom: 5%;
   }
   .title{
   font-size: 15px;
@@ -525,7 +541,7 @@ img{
     padding-top: 20px;
     height: 500px;
     z-index: 1000;
-    right: 0;
+    right: 5%;
     width: 100%;
     overflow-y: hidden;
     scrollbar-color: var(--blue) var(--orange);
@@ -545,70 +561,68 @@ img{
     margin: 5%;
   }
   .one{
-    grid-column: 2;
-    grid-row: 2;
     position: relative;
-    top: -25%;
-    left: -20%;
-    z-index: 500;
+    left: -2%;
+    top: -2%;
+    max-width: 15%;
   }
   .two{
     grid-column: 2;
     grid-row: 1;
     top: 30%;
-    width: 120%;
+    max-width: 15%;
     left: -5%;
   } 
   .three{
     grid-column: 3;
     grid-row: 1;
     rotate: 45deg;
-    top: 38%;
-    left: -60%;
+    top: 50%;
+    left: -70%;
   }
   .four{
     grid-column: 1;
     grid-row: 2;
     rotate: 90deg;
     left: 60%;
-    top: -30%;
+    top: -25%;
   }
   .five{
     grid-column: 1;
     grid-row: 1;
     rotate: -45deg;
     top: 40%;
-    left: 70%;
+    left: 60%;
   }
   .six{
     grid-column: 3;
     grid-row: 2;
     rotate: 90deg;
-    width: 120%;
+    max-width: 15%;
     left: -65%;
-    top: 20%;
+    top: -20%;
   }
   .seven{
     grid-column: 1;
     grid-row: 3;
     rotate: 45deg;
-    top: -50%;
-    left: 55%;
-    width: 130%;
+    top: -90%;
+    left: 70%;
+    max-width: 10%;
   }
   .eight{
     grid-column: 2;
     grid-row: 3;
-    width: 70%;
-    left: 20%;
+    max-width: 7%;
+    left: 0%;
     top: -80%;
   }
   .nine{
     grid-column: 3;
     grid-row: 3;
     rotate: -45deg;
-    top: -95%;
-    left: -55%;
+    top: -90%;
+    left: -65%;
   }
   .info{
     position: relative;
@@ -619,6 +633,7 @@ img{
   .wrap {
     position: relative;
     top: -35%;
+    left: 5%;
   }
 .hour {
   top: 7px;
@@ -646,7 +661,7 @@ table{
 }
 .wstitle{
   position: relative;
-  left: -20%;
+  left: -15%;
   margin-right: 5%;
 }
 
@@ -680,8 +695,15 @@ table{
 }
 .ssmall{
   max-width: 50px;
+  top: -80px;
 }
 .s2small{
   max-width: 70px;
+  top: -80px;
+}
+.wrap{
+  position: relative;
+  left: -40%;
+  top: -50%;
 }
 }

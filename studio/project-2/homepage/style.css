@@ -516,7 +516,7 @@ img{
   .watches{
     position: relative;
     margin-left: 0;
-    left: -30%;
+    left: -20%;
     top: -20%;
     margin-bottom: 5%;
   }
@@ -577,13 +577,15 @@ img{
     grid-column: 3;
     grid-row: 1;
     rotate: 45deg;
-    top: 50%;
-    left: -70%;
+    max-width: 12%;
+    top: 40%;
+    left: -60%;
   }
   .four{
     grid-column: 1;
     grid-row: 2;
     rotate: 90deg;
+    max-width: 10%;
     left: 60%;
     top: -25%;
   }
@@ -591,6 +593,7 @@ img{
     grid-column: 1;
     grid-row: 1;
     rotate: -45deg;
+    max-width: 10%;
     top: 40%;
     left: 60%;
   }
@@ -608,7 +611,7 @@ img{
     rotate: 45deg;
     top: -90%;
     left: 70%;
-    max-width: 10%;
+    max-width: 12%;
   }
   .eight{
     grid-column: 2;
@@ -621,6 +624,7 @@ img{
     grid-column: 3;
     grid-row: 3;
     rotate: -45deg;
+    max-width: 10%;
     top: -90%;
     left: -65%;
   }
@@ -632,8 +636,10 @@ img{
   }
   .wrap {
     position: relative;
-    top: -35%;
-    left: 5%;
+    top: -30%;
+    left: -25%;
+    width: 170px;
+    height: 170px;
   }
 .hour {
   top: 7px;
@@ -700,10 +706,5 @@ table{
 .s2small{
   max-width: 70px;
   top: -80px;
-}
-.wrap{
-  position: relative;
-  left: -40%;
-  top: -50%;
 }
 }

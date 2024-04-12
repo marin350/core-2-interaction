@@ -1,0 +1,48 @@
+body{
+    background-color: azure;
+    margin-left: 3%;
+    font-family: "Didact Gothic", sans-serif;
+    color: darkslategray;
+    padding-bottom: 30px;
+}
+.details{
+    margin-bottom: -1%;
+    width: 50%;
+}
+hr{
+    margin-top: 5%;
+    width: 40%;
+    position: relative;
+    left: -30%;
+    border-bottom: none;
+
+    border-top: 1px solid darkslategray;
+}
+h3{
+    margin-top: -1%;
+}
+img{
+    width: 150px;
+    height: auto;
+    margin-bottom: 10%;
+    border-radius: 50% 50% 0% 50%;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.item1{
+    grid-column: 1;
+}
+.item2{
+    position: relative;
+    top: 15%;
+    grid-column: 2;
+}
+.emoji{
+   font-size: 100px;
+   position: relative;
+   top: -40%;
+   margin-left: 5%;
+}

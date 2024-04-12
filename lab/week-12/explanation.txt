@@ -1,0 +1,5 @@
+Izzy and I first started by trying to access the right API JSON file with the data relevant to the location we wanted to display, after finding the file we initally struggled with understanding the correct URL to link and had errors on our console due to files being linked incorrectly or spelling mistakes.
+
+After some help, we were able to console.log our data and see the objects. We were able to use createElement to create a div and appendChild to add our template literals to the page. 
+
+For the icons that are displayed on the right, I initally wanted to use emojis to display using an if/else conditional but noticed that each day/forecast had it's own icon in the API JSON file which I added in the same way as the other template literals. Additionally I looked at some online tutorials to help create the conditional statement to then display the emojis along with the icons.

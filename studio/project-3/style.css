@@ -1,0 +1,13 @@
+body{
+    font-family: prestige-elite-std, monospace; 
+    letter-spacing: -1px;
+    color: var(--red);
+    font-weight: 400;
+}
+:root{
+    --red: rgb(214, 52, 7);
+}
+h1{
+    text-align: center;
+    font-weight: 400;
+}

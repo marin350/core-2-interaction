@@ -1,0 +1,25 @@
+h1{
+    font-size: 25px;
+    color: black;
+}
+h1:hover{
+    color: darkslateblue;
+    cursor: pointer;
+}
+#container{
+    width: 60%;
+    height: 100vh;
+    position: relative;
+    border: 1px solid black;
+}
+.image-display{
+    position: absolute;
+    opacity: 100;
+    width: 5%;
+
+}
+img{
+    max-width: 100%;
+    padding: 5%;
+    margin: 5%;
+}

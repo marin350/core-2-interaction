@@ -23729,73 +23729,168 @@ const data = [
   }
 ]
 
-//Metadata
-//"Img"
-//"Borough"
-// "Des_Addres" --> address
-// "Date_Low" 
-// "Date_High"
-// "Arch_Build" --> architect
-// "Style_Prim" 
-// "Mat_Prim"
-// "Use_Orig" --> original use
-// "Hist_Dist"
+const html = [
+  {
+    "Color" : "blue",
+    "District" : ["Upper West Side / Central Park West Historic District", "Manhattan Avenue Historic District"]
+  },
+  {
+    "Color" : "blue2",
+    "District" : ["Riverside-West 105th Street Historic District", "Riverside-West End Historic District", "Riverside-West End Historic District Extension I", "Riverside-West End Historic District Extension II", "West End-Collegiate Historic District", "West End-Collegiate Historic District Extension"]
+  },
+  {
+    "Color" : "blue3",
+    "District" : ["Upper East Side Historic District", "Upper East Side Historic District Extension", "Park Terrace West-West 217th Street Historic District", "Carnegie Hill Historic District", "Treadwell Farm Historic District"]
+  },
+  {
+    "Color" : "blue4",
+    "District" : ["Mount Morris Park Historic District Extension", "Jumel Terrace Historic District", "Hamilton Heights / Sugar Hill Historic District", "Hamilton Heights / Sugar Hill Historic District Extension", "Hamilton Heights / Sugar Hill Northeast Historic District", "Hamilton Heights / Sugar Hill Northwest Historic District", "Hamilton Heights Historic District", "Hamilton Heights Historic District Extension", "Dorrance Brooks Square Historic District", "Audubon Terrace Historic Distric"]
+  },
+  {
+    "Color" : "green",
+    "District" : ["Tribeca East Historic District", "Tribeca North Historic District", "Tribeca South Historic District", "Tribeca West Historic District", "African Burial Ground & The Commons Historic District"]
+  },
+  {
+    "Color" : "green2",
+    "District" : ["Greenwich Village Historic District", "Greenwich Village Historic District Extension", "Greenwich Village Historic District Extension II", "South Village Historic District", "Gansevoort Market Historic District"]
+  },
+  {
+    "Color" : "lime",
+    "District" : ["SoHo-Cast Iron Historic District", "SoHo-Cast Iron Historic District Extension", "NoHo East Historic District", "NoHo Historic District", "NoHo Historic District Extension", "Charlton-King-Vandam Historic District", "Sullivan-Thompson Historic District"]
+  },
+  {
+    "Color" : "orange",
+    "District" : ["Ladies' Mile Historic District", "Gramercy Park Historic District Extension", "Madison Square North Historic District", "Stuyvesant Heights Historic District", "Stuyvesant Square Historic Distric"]
+  },
+  {
+    "Color" : "yellow",
+    "District" : ["Murray Hill Historic District", "Tudor City Historic District"]
+  },
+  { 
+    "Color" : "pink",
+    "District" : ["Chelsea Historic District", "Chelsea Historic District Extension"]
+  },
+  {
+    "Color" : "pink2",
+    "District" : ["East 10th Street Historic District", "East Village / Lower East Side Historic District"]
+  },
+  {
+    "Color" : "lavender",
+    "District" : ["South Street Seaport Historic District"]
+  }
+]
+
+const dataId = document.getElementById("date-id").innerText;
+const allowedDistricts = html.reduce((acc, dist) => {
+  if (dist.Color === dataId) {
+    acc.push(...dist.District);
+  }
+  return acc;
+}, []);
+
+const totalImages = data.filter(building => allowedDistricts.includes(building.Hist_Dist)).length;
 
 
-console.log("objects: " + data.length)
 
-    
-
-//Random Positioning 
-
-function getRandomPosition(containerWidth, containerHeight) {
-  const x = Math.floor(Math.random() * (containerWidth - 100)); 
-  const y = Math.floor(Math.random() * (containerHeight - 100)); 
+function getPositionInGrid(containerWidth, containerHeight, totalImages, cols, index) {
+  const rows = Math.ceil(totalImages / cols);
+  const cellWidth = containerWidth / cols;
+  const cellHeight = containerHeight / rows;
+  const row = Math.floor(index / cols);
+  const col = index % cols;
+  const x = col * cellWidth;
+  const y = row * cellHeight;
   return { x, y };
 }
 
-
 const container = document.getElementById('container');
 
-data.filter(building => building.Hist_Dist === "Greenwich Village Historic District").forEach(building => {
-  const div = document.createElement('div');
-  div.className = "image-display";
 
-  const { x, y } = getRandomPosition(container.clientWidth, container.clientHeight);
 
-  div.style.left = `${x}px`;
-  div.style.top = `${y}px`;
 
-  const img = document.createElement('img');
-  img.src = building.Img;
 
-  div.appendChild(img);
-
-  container.appendChild(div);
+const districtCounts = {};
+data.forEach(building => {
+  const district = building.Hist_Dist;
+  if (!districtCounts[district]) {
+    districtCounts[district] = 1;
+  } else {
+    districtCounts[district]++;
+  }
 });
 
 
+let displayedBuildingsCount = 0;
+const cols = 25; 
+const rowGap = 5;
+const padding = 5
 
-//opacity to color
-// let container = document.getElementById("container");
+function getTotalGridHeight(containerWidth, totalImages) {
+  const rows = Math.ceil(totalImages / cols); 
+  const cellHeight = (containerWidth / cols) + rowGap; 
+  const totalHeight = rows * cellHeight - rowGap; 
+  return totalHeight;
+}
 
+const totalGridHeight = getTotalGridHeight(container.clientWidth, totalImages);
 
+container.style.height = totalGridHeight + 'px';
 
-// for (let i = 0; i < collection.length; i++) {
-  
-//   if (collection[i].Color != "silver") {
-//   let itemColor = collection[i].Color;
-//   let newP = document.createElement("div");
-//   newP.style.color = itemColor;
-//     console.log(newP.style.color);
-//   newP.innerText = itemColor;
-//   container.appendChild(newP);
-  
-// } else {
-//  console.log(collection[i].Color + " nope!");
+container.style.paddingBottom = padding + '%'
+
+let buildingIndex = 0;
+data.forEach(building => {
+  if (allowedDistricts.includes(building.Hist_Dist)) {
+    const div = document.createElement('div');
+    div.className = "image-display";
+    const imageOpacity = building.Date_High % 100;
+
+    const { x, y } = getPositionInGrid(container.clientWidth, container.clientHeight, totalImages, cols, buildingIndex);
+
+    if (x >= 0 && x < container.clientWidth && y >= 0 && y < container.clientHeight) {
+      displayedBuildingsCount++;
+    }
+
+    div.style.left = `${x}px`;
+    div.style.top = `${y}px`;
+    div.style.opacity = `${imageOpacity}%`;
+
     
-// }
+div.addEventListener('click', function(){
+  const displayedData = container.querySelector('.display-data');
 
-// }
+  if (displayedData) {
+    displayedData.remove();
+  }
 
+  const dataDisplay = document.createElement('div');
+  dataDisplay.className = "display-data";
+  dataDisplay.innerHTML = `
+    <div>YEAR BUILT: ${building.Date_Low}-${building.Date_High}</div>
+    <br>
+    <div>ARCHITECTURAL STYLE: ${building.Style_Prim}</div>
+    <br>
+    <div>ARCHITECT: ${building.Arch_Build}</div>
+    <br>
+    <div>ADDRESS: ${building.Des_Addres}</div>
+    <br>
+    <div>ORIGINAL PURPOSE: ${building.Use_Orig}</div>
+  `;
+  container.appendChild(dataDisplay);
+});
+    
+    const img = document.createElement('img');
+    img.src = building.Img;
+    img.alt = building.Des_Addres
+
+    div.appendChild(img);
+
+    container.appendChild(div);
+
+    buildingIndex++;
+  }
+});
+
+console.log("Number of buildings in each historic district:", districtCounts);
+console.log("Number of buildings displayed on screen:", displayedBuildingsCount);
 

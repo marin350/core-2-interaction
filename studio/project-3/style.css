@@ -9,6 +9,18 @@ body{
     overflow-x: hidden;
     padding-bottom: 10%;
 }
+body::-webkit-scrollbar{
+    width: 8px;
+    padding: 10px;
+  }
+  body::-webkit-scrollbar-track{
+    background: ivory;
+  }
+  body::-webkit-scrollbar-thumb{
+    background: orangered;
+    border-radius: 20px;
+    margin: 10px;
+  }
 header{
     text-align: center;
 }
@@ -25,14 +37,14 @@ h1{
     margin-top: 3%;
     top: 20px;
     padding-bottom: 15%;
-    left: 20%;
+    left: 22%;
 }
 img{
     max-width: 55%;
 } 
 .one:hover, .two:hover, .three:hover, .four:hover, .five:hover, .six:hover, .seven:hover, .eight:hover, .nine:hover, .ten:hover, .eleven:hover, .twelve:hover{
-    max-width: 57%;
-    transition: ease 0.5s;
+    /* max-width: 57%; */
+    transition: ease-in-out 0.5s;
     cursor: pointer;
     margin-top: 5%;
 }
@@ -40,8 +52,8 @@ img{
     max-width: 48%;
 }
 .four:hover, .five:hover, .twelve:hover{
-    max-width: 50%;
-    transition: ease 0.2s;
+    /* max-width: 50%; */
+    transition: ease-in-out 0.5s;
 }
 .eight{
     top: 25%;
@@ -49,8 +61,8 @@ img{
     z-index: 1000;
 }
 .eight:hover{
-    max-width: 100%;
-    transition: ease 0.2s;
+    /* max-width: 100%; */
+    transition: ease-in-out 0.5s;
 }
 .nine{
     top: 10%;
@@ -61,7 +73,7 @@ img{
     left: -15%;
 }
 .eleven:hover{
-    max-width: 100%;
+    /* max-width: 100%; */
     transition: ease 0.2s;
 }
 .pos{
@@ -92,7 +104,7 @@ a{
     width: 85%;
     color: black;
     font-weight: 700;
-    transition: ease 1s;
+    transition: ease-in-out 0.5s;
 }
 .two:hover + .blue2{
     display: block;
@@ -100,7 +112,7 @@ a{
     width: 85%;
     color: black;
     font-weight: 700;
-    transition: ease 1s;
+    transition: ease-in-out 0.5s;
 }
 .three:hover + .blue3{
     display: block;
@@ -108,7 +120,7 @@ a{
     width: 85%;
     color: black;
     font-weight: 700;
-    transition: ease 1s;
+    transition: ease-in-out 0.5s;
 }
 .four:hover + .blue4{
     display: block;
@@ -116,7 +128,7 @@ a{
     width: 130%;
     color: black;
     font-weight: 700;
-    transition: ease 1s;
+    transition: ease-in-out 0.5s;
 }
 .five:hover + .green{
     display: block;
@@ -124,7 +136,7 @@ a{
     width: 85%;
     color: black;
     font-weight: 700;
-    transition: ease 1s;
+    transition: ease-in-out 0.5s;
 }
 .six:hover + .green2{
     display: block;
@@ -132,7 +144,7 @@ a{
     width: 85%;
     color: black;
     font-weight: 700;
-    transition: ease 1s;
+    transition: ease-in-out 0.5s;
 }
 .seven:hover + .lime{
     display: block;
@@ -140,7 +152,7 @@ a{
     width: 85%;
     color: black;
     font-weight: 700;
-    transition: ease 1s;
+    transition: ease-in-out 0.5s;
 }
 .eight:hover + .yellow{
     display: block;
@@ -148,7 +160,7 @@ a{
     width: 85%;
     color: black;
     font-weight: 700;
-    transition: ease 1s;
+    transition: ease-in-out 0.5s;
 }
 .nine:hover + .orange{
     display: block;
@@ -156,7 +168,7 @@ a{
     width: 85%;
     color: black;
     font-weight: 700;
-    transition: ease 1s;
+    transition: ease-in-out 0.5s;
 }
 .ten:hover + .pink{
     display: block;
@@ -164,7 +176,7 @@ a{
     width: 85%;
     color: black;
     font-weight: 700;
-    transition: ease 1s;
+    transition: ease-in-out 0.5s;
 }
 .eleven:hover + .pink2{
     display: block;
@@ -172,7 +184,7 @@ a{
     width: 85%;
     color: black;
     font-weight: 700;
-    transition: ease 1s;
+    transition: ease-in-out 0.5s;
 }
 .twelve:hover + .lavender{
     display: block;
@@ -180,5 +192,11 @@ a{
     width: 85%;
     color: black;
     font-weight: 700;
-    transition: ease 1s;
+    transition: ease-in-out 0.5s;
+}
+footer{
+    font-size: 12px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 5px;
 }

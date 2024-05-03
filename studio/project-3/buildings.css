@@ -67,3 +67,40 @@ img:hover{
     top: -105px;
     left:-43%;
 }
+
+
+
+@media screen and (max-width: 400px) {
+    h1{
+        font-size: 25px;
+        margin: 5%;
+    }
+    #container{
+        position: relative;
+        top: 15%;
+        left: 5%;
+        width: 85%;
+    }
+    .display-data{
+        position: relative;
+        left: -5%;
+        top: 115%;
+        font-size: 13px;
+        width: 60%;
+    }
+    .range{
+        max-width: 20%;
+        position: relative;
+        top: 600px;
+        left: 72%;
+        rotate: 90deg;
+    }
+    .daterange{
+        display: block;
+        margin-bottom: 9%;
+        font-size: 11px;
+        position: relative;
+        top: 540px;
+        left: 28%;
+    }
+}

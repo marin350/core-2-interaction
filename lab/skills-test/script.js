@@ -4,9 +4,6 @@ var circle = document.getElementById("circle")
 function makeItGreen() {
     circle.style.backgroundColor = "green"
 }
-function makeItBlue() {
-    circle.style.backgroundColor = "blue"
-}
 
 //add()
 function add(number1, number2) {

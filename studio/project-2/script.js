@@ -217,7 +217,8 @@ document.addEventListener("DOMContentLoaded", function(){
 
   watchImg.forEach(image=>{
     image.addEventListener("mouseover", function(){
-      const watchId = image.getAttribute("data-watch-id");
+      const watchId = image.getAttribute("data-watch-id"); 
+      
       const watch = collection.find(w => w.id === watchId.toString());
       if (watch){
         const dataHTML = `
